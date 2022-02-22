@@ -1291,6 +1291,34 @@ Select-Object @{L="Name"
 ; E={$LimitingCollection}},@{L="Comment"
 ; E={"Office 365 Build Version | 2110"}}
 
+##Collection 134
+$Collections +=
+$DummyObject |
+Select-Object @{L="Name"
+; E={"Office 365 Build Version | 2111"}},@{L="Query"
+; E={"select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport like '16.0.14701.%'"}},@{L="LimitingCollection"
+; E={$LimitingCollection}},@{L="Comment"
+; E={"Office 365 Build Version | 2111"}}
+
+##Collection 135
+$Collections +=
+$DummyObject |
+Select-Object @{L="Name"
+; E={"Office 365 Build Version | 2112"}},@{L="Query"
+; E={"select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport like '16.0.14729.%'"}},@{L="LimitingCollection"
+; E={$LimitingCollection}},@{L="Comment"
+; E={"Office 365 Build Version | 2112"}}
+
+##Collection 136
+$Collections +=
+$DummyObject |
+Select-Object @{L="Name"
+; E={"Office 365 Build Version | 2201"}},@{L="Query"
+; E={"select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport like '16.0.14827.%'"}},@{L="LimitingCollection"
+; E={$LimitingCollection}},@{L="Comment"
+; E={"Office 365 Build Version | 2201"}}
+
+
 #Check Existing Collections
 $Overwrite = 1
 $ErrorCount = 0
